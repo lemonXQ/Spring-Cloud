@@ -1,0 +1,14 @@
+server:
+   port: 3344
+   
+spring:
+  application:
+    name:  microservicecloud-config
+  cloud:
+    config: 
+       server:
+          git:
+#             uri: git@github.com:lemonXQ/microservicecloud-config.git #ssh连接，在GitHub上面git仓库名字
+             uri: https://github.com/lemonXQ/microservicecloud-config #http连接git
+#             uri: https://github.com/lemonXQ/microservicecloud-config.git #http连接git   
+             force-pull: true #设置强行pull拉取
